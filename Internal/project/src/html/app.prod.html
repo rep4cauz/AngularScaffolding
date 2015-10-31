@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Title</title>
+    <!-- encoding -->
+    <meta charset="utf-8">
+    <!-- responsiveness, scaling... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- set the descritpion of you site -->
+    <meta name="description" content="This is the main page for the an angular seed template">
+    <!-- set author of your site -->
+    <meta name="author" content="Manuel Hernandez">
+    <!-- IE compatibility modes -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- site thumbnail -->
+    <link rel="image_src" href="thumbnail.png" />
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/components.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="ng-app" data-ng-app="myApp">
+        <ng-view></ng-view>
+    </div>
+    <script>
+        var pageVars = pageVars || {};
+        pageVars.urls = {
+            workset: 'https://svc01.planzu.com/api/workset',
+        };
+        pageVars.clientCode = 'QrVhqYwUUABXSGKqFwgoILHPCHhFIc59'
+    </script>
+    <script src="js/libraries.js"></script>
+    <script src="js/desktop-app.js"></script>
+    <script src="js/desktop-controllers.js"></script>
+    <script src="js/desktop-directives.js"></script>
+    <script src="js/desktop-filters.js"></script>
+    <script src="js/desktop-services.js"></script>
+    <script src="js/desktop-templates.js"></script>
+</body>
+</html>
